@@ -7,13 +7,14 @@
 	<title>TechOrbit</title>
 	<meta name="description" content="Tienda online de informática" />
 	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="images/favicon.png">
 </head>
 
 <body>
 	<header class="header">
 		<nav class="navbar" aria-label="Navegación principal">
 			<a href="index.html" class="logo">
-				<img src="/nueva web/images/logo inicio.jpg" alt="Logo TechOrbit"> <!--Pendiente de poner-->
+				<img src="/nueva-web/images/logo inicio.jpg" alt="Logo TechOrbit"> <!--Pendiente de poner-->
 			</a>
 
 			<!--*BOTON HAMBURGUESA*-->
@@ -24,7 +25,7 @@
 			</button>
 
 
-			<ul class="nav-list">
+			<ul class="nav-list" id="nav-list">
 				<li>
 					<a href="#">Productos</a>
 				</li>
@@ -46,12 +47,20 @@
 		</nav>
 
 		<div class="icons">
-			<img src="/nueva web/images/round-icons-Z4fUBhVDhW8-unsplash.png" alt="Icono de lupa">
+			<a href="#search" class="icon-link" aria-label="Buscar productos">
+				<img src="/nueva-web/images/round-icons-Z4fUBhVDhW8-unsplash.png" 
+				alt="Icono de lupa">
+			</a>
 
-			<img src="/nueva web/images/png-transparent-computer-icons-google-account-scalable-graphics-computer-file-my-account-icon-rim-123rf-symbol.png"
-				alt="Icono de cuenta">
-			<img src="/nueva web/images/986-9868123_png-file-icono-carrito-de-compras.png"
-				alt="Icono de carrito de la compra">
+			<a href="#login.html" class="icon-link" aria-label="Mi cuenta">
+				<img src="/nueva-web/images/png-transparent-computer-icons-google-account-scalable-graphics-computer-file-my-account-icon-rim-123rf-symbol.png"
+					alt="Icono de cuenta">
+			</a>
+
+			<a href="#carrito" class="icon-link" aria-label="Carrito de la compra">
+				<img src="/nueva-web/images/986-9868123_png-file-icono-carrito-de-compras.png"
+					alt="Icono de carrito de la compra">
+			</a>
 		</div>
 	</header>
 
@@ -71,24 +80,19 @@
 				</h1>
 
 				<p>
-					Descubre nuestra selección de ordenadores, componentes y accesorios gamming de ultima generación.
+					Descubre nuestra selección de ordenadores, componentes y accesorios gaming de última generación.
 				</p>
 
-			</div>
 
-			<div class="hero-img">
-				<img src="/nueva web/images/mejores-ordenadores-gaming.jpg" alt="">
-			</div>
-			<a href="#productos" class="button-primary">Ver Productos ></a>
-			<a href="#Ofertas" class="button-primary">Ofertas Especiales</a>
 
+				<div class="hero-img">
+					<img src="/nueva-web/images/mejores-ordenadores-gaming.jpg"
+						alt="Ordenador gaming de alto rendimiento">
+				</div>
+				<a href="#productos" class="button-primary">Ver Productos →</a>
+				<a href="#Ofertas" class="button-primary">Ofertas Especiales</a>
+			</div>
 		</section>
-
-
-
-
-
-
 
 
 
