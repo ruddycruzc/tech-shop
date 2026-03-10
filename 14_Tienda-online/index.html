@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
@@ -11,45 +11,92 @@
 
 <body>
 	<header class="header">
-		<div class="logo">
-			<img src="img/logo.svg" alt="Logo TechOrbit">  <!--Pendiente de poner-->
-		</div>
+		<nav class="navbar" aria-label="Navegación principal">
+			<a href="index.html" class="logo">
+				<img src="/nueva web/images/logo inicio.jpg" alt="Logo TechOrbit"> <!--Pendiente de poner-->
+			</a>
 
-		<nav class="nav">
-			<a href="#">Productos</a>
-			<a href="#">Ofertas</a>
-			<a href="#">Componentes</a>
-			<a href="#">Gaming</a>
-			<a href="#">Contacto</a>
+			<!--*BOTON HAMBURGUESA*-->
+			<button class="nav-toggle" type="button" id="nav-toggle" aria-label="Abrir menu" aria-controls="nav-list"
+				aria-expanded="false">
+				☰
+				<!--Los atributos aria hacen el menu accesible-->
+			</button>
+
+
+			<ul class="nav-list">
+				<li>
+					<a href="#">Productos</a>
+				</li>
+				<li>
+					<a href="#">Ofertas</a>
+				</li>
+				<li>
+					<a href="#">Componentes</a>
+				</li>
+				<li>
+					<a href="#">Gaming</a>
+				</li>
+				<li>
+					<a href="#">Contacto</a>
+				</li>
+
+
+			</ul>
 		</nav>
 
 		<div class="icons">
-			<img src="icons/search.svg">  <!--Pendiente de poner-->
-			<img src="icons/user.svg">     <!--Pendiente de poner-->
-			<img src="icons/cart.svg">            <!--Pendiente de poner-->
+			<img src="/nueva web/images/round-icons-Z4fUBhVDhW8-unsplash.png" alt="Icono de lupa">
+
+			<img src="/nueva web/images/png-transparent-computer-icons-google-account-scalable-graphics-computer-file-my-account-icon-rim-123rf-symbol.png"
+				alt="Icono de cuenta">
+			<img src="/nueva web/images/986-9868123_png-file-icono-carrito-de-compras.png"
+				alt="Icono de carrito de la compra">
 		</div>
 	</header>
 
-	<section class="hero">
-
-		<div class="hero-text">
-
-			<span class="ofert">✨ Nuevas ofertas cada semana</span>
-
-			<h1>
-				La mejor Tecnología al Mejor precio
-			</h1>
-
-		</div>
-
-		<div class="hero-img">
-			<img src="img/gaming-pc.png">      <!--Pendiente de poner-->
-		</div>
-
-	</section>
 
 
+	<main>
 
+
+		<section class="hero">
+
+			<div class="hero-text">
+
+				<span class="ofert">✨ Nuevas ofertas cada semana</span>
+
+				<h1>
+					La mejor Tecnología al Mejor precio
+				</h1>
+
+				<p>
+					Descubre nuestra selección de ordenadores, componentes y accesorios gamming de ultima generación.
+				</p>
+
+			</div>
+
+			<div class="hero-img">
+				<img src="/nueva web/images/mejores-ordenadores-gaming.jpg" alt="">
+			</div>
+			<a href="#productos" class="button-primary">Ver Productos ></a>
+			<a href="#Ofertas" class="button-primary">Ofertas Especiales</a>
+
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</main>
 </body>
 
 </html>
