@@ -27,19 +27,17 @@
 
 			<ul class="nav-list" id="nav-list">
 				<li>
-					<a href="#">Productos</a>
+					<a href="#productos">Productos</a>
 				</li>
 				<li>
-					<a href="#">Ofertas</a>
+					<a href="#ofertas">Ofertas</a>
+				</li>
+			
+				<li>
+					<a href="#newsletter">Suscríbete</a>
 				</li>
 				<li>
-					<a href="#">Componentes</a>
-				</li>
-				<li>
-					<a href="#">Suscríbete</a>
-				</li>
-				<li>
-					<a href="#">Contacto</a>
+					<a href="#contacto">Contacto</a>
 				</li>
 
 
@@ -68,9 +66,9 @@
 
 		<section class="hero">
 
-			<header class="hero-text">
+			<header class="hero-content">
 
-				<span class="ofert">✨ Nuevas ofertas cada semana</span>
+				<span class="ofert-badge">✨ Nuevas ofertas cada semana</span>
 
 				<h1>
 					La mejor Tecnología al Mejor precio
@@ -80,11 +78,11 @@
 				<p>
 					Descubre nuestra selección de ordenadores, componentes y accesorios gaming de última generación.
 				</p>
-				<nav class="hero-buttons">
+				<div class="hero-buttons">
 					<a href="#productos" class="button-primary">Ver Productos →</a>
-					<a href="#ofertas" class="button-primary">Ofertas Especiales</a>
+					<a href="#ofertas" class="button-secondary">Ofertas Especiales</a>
 
-				</nav>
+				</div>
 			</header>
 
 			<figure class="hero-img">
@@ -98,7 +96,7 @@
 
 
 		<section id="productos" class="productos">
-			<header>
+			<header class="section-tittle">
 				<h2>Productos Destacados</h2>
 
 				<p>Equípate con lo mejor de TechShop</p>
@@ -107,170 +105,175 @@
 
 
 
-			<section class="products-grid">
-				<article class="product-card">
+			<ul class="products-grid">
+				<li class="product-item">
+					<article class="product-card">
 
-					<a href="producto-antivirus.html">
+						<a href="producto-antivirus.html">
 
-						<img src="images/antivirus.jpg" alt="Software antivirus">
+							<img src="images/antivirus.jpg" alt="Software antivirus">
 
-						<h3>Antivirus</h3>
+							<h3>Antivirus</h3>
 
-						<p class="price">33€</p>
+							<p class="price">33€</p>
 
-						<p class="stock">Stock: 5 unidades</p>
+							<p class="stock">Stock: 5 unidades</p>
 
-					</a>
+						</a>
+						<button class="btn-add-cart">Añadir al carrito</button>
 
-				</article>
+					</article>
+				</li>
 
+				<li class="product-item">
+					<article class="product-card">
 
+						<a href="producto-grafica.html">
 
-				<article class="product-card">
+							<img src="images/grafica.jpg" alt="Tarjeta gráfica gaming">
 
-					<a href="producto-grafica.html">
+							<h3>Tarjeta gráfica</h3>
 
-						<img src="images/grafica.jpg" alt="Tarjeta gráfica gaming">
+							<p class="price">169€</p>
 
-						<h3>Tarjeta gráfica</h3>
+							<p class="stock">Stock: 2 unidades</p>
 
-						<p class="price">169€</p>
+						</a>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</article>
+				</li>
 
-						<p class="stock">Stock: 2 unidades</p>
+				<li class="product-item">
+					<article class="product-card">
 
-					</a>
+						<a href="producto-disco.html">
 
-				</article>
+							<img src="images/disco.jpg" alt="Disco duro SSD">
 
+							<h3>Disco duro</h3>
 
+							<p class="price">36€</p>
 
-				<article class="product-card">
+							<p class="stock">Stock: 8 unidades</p>
 
-					<a href="producto-disco.html">
+						</a>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</article>
+				</li>
 
-						<img src="images/disco.jpg" alt="Disco duro SSD">
+				<li class="product-item">
+					<article class="product-card">
 
-						<h3>Disco duro</h3>
+						<a href="producto-ordenador.html">
 
-						<p class="price">36€</p>
+							<img src="images/ordenador.jpg" alt="Ordenador gaming">
 
-						<p class="stock">Stock: 8 unidades</p>
+							<h3>Ordenador gaming</h3>
 
-					</a>
+							<p class="price">360€</p>
 
-				</article>
+							<p class="stock">Stock: 3 unidades</p>
 
+						</a>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</article>
+				</li>
 
 
-				<article class="product-card">
+				<li class="product-item">
 
-					<a href="producto-ordenador.html">
+					<article class="product-card">
 
-						<img src="images/ordenador.jpg" alt="Ordenador gaming">
+						<a href="producto-bolso.html">
 
-						<h3>Ordenador gaming</h3>
+							<img src="images/bolso.jpg" alt="Bolso para portátil">
 
-						<p class="price">360€</p>
+							<h3>Bolso portátil</h3>
 
-						<p class="stock">Stock: 3 unidades</p>
+							<p class="price">11€</p>
 
-					</a>
+							<p class="stock">Stock: 10 unidades</p>
 
-				</article>
+						</a>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</article>
+				</li>
 
+				<li class="product-item">
+					<article class="product-card">
 
+						<a href="producto-portatil.html">
 
-				<article class="product-card">
+							<img src="images/portatil.jpg" alt="Ordenador portátil">
 
-					<a href="producto-bolso.html">
+							<h3>Portátil</h3>
 
-						<img src="images/bolso.jpg" alt="Bolso para portátil">
+							<p class="price">540€</p>
 
-						<h3>Bolso portátil</h3>
+							<p class="stock">Stock: 4 unidades</p>
 
-						<p class="price">11€</p>
+						</a>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</article>
+				</li>
 
-						<p class="stock">Stock: 10 unidades</p>
+				<li class="product-item">
+					<article class="product-card">
 
-					</a>
+						<a href="producto-ram.html">
 
-				</article>
+							<img src="images/ram.jpg" alt="Memoria RAM">
 
+							<h3>Memoria RAM</h3>
 
+							<p class="price">21€</p>
 
-				<article class="product-card">
+							<p class="stock">Stock: 3 unidades</p>
 
-					<a href="producto-portatil.html">
+						</a>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</article>
+				</li>
 
-						<img src="images/portatil.jpg" alt="Ordenador portátil">
+				<li class="product-item">
+					<article class="product-card">
 
-						<h3>Portátil</h3>
+						<a href="producto-router.html">
 
-						<p class="price">540€</p>
+							<img src="images/router.jpg" alt="Router WiFi">
 
-						<p class="stock">Stock: 4 unidades</p>
+							<h3>Router</h3>
 
-					</a>
+							<p class="price">66€</p>
 
-				</article>
+							<p class="stock">Stock: 1 unidad</p>
 
+						</a>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</article>
+				</li>
 
+				<li class="product-item">
+					<article class="product-card">
 
-				<article class="product-card">
+						<a href="producto-tv.html">
 
-					<a href="producto-ram.html">
+							<img src="images/sintonizador.jpg" alt="Sintonizadora de TV">
 
-						<img src="images/ram.jpg" alt="Memoria RAM">
+							<h3>Sintonizadora TV</h3>
 
-						<h3>Memoria RAM</h3>
+							<p class="price">25€</p>
 
-						<p class="price">21€</p>
+							<p class="stock">Stock: 2 unidades</p>
 
-						<p class="stock">Stock: 3 unidades</p>
-
-					</a>
-
-				</article>
-
-
-
-				<article class="product-card">
-
-					<a href="producto-router.html">
-
-						<img src="images/router.jpg" alt="Router WiFi">
-
-						<h3>Router</h3>
-
-						<p class="price">66€</p>
-
-						<p class="stock">Stock: 1 unidad</p>
-
-					</a>
-
-				</article>
-
-
-
-				<article class="product-card">
-
-					<a href="producto-tv.html">
-
-						<img src="images/sintonizador.jpg" alt="Sintonizadora de TV">
-
-						<h3>Sintonizadora TV</h3>
-
-						<p class="price">25€</p>
-
-						<p class="stock">Stock: 2 unidades</p>
-
-					</a>
-
-				</article>
-			</section>
+						</a>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</article>
+				</li>
 		</section>
 
-		<section class="newsletter" class="newsletter">
+
+		<section id="newsletter" class="newsletter">
 			<header>
 				<h2>Suscríbete a Nuestro Newsletter</h2>
 				<p>Recibe las últimas ofertas, novedades y consejos técnicos directamente en tu correo</p>
@@ -300,108 +303,116 @@
 
 
 
-	<footer>
-		<section class="footer-brand">
-			<a href="index.html">
-				<img src="/" alt="Logo TechShop"> <!--Pendiente de poner-->
-			</a>
+	<footer class="main-footer">
+		<div class="footer-container">
+			<section class="footer-info">
+				<a href="index.html">
+					<img src="/" alt="Logo TechShop"> <!--Pendiente de poner-->
+				</a>
 
-			<h3>TechShop</h3>
-			<p>Tu tienda de confianza para productos de tecnología e informática desde 2010</p>
-		</section>
-
-		<section class="redes-sociales">
-
-			<a href="#facebook" aria-label="Facebook">
-				<img src="/" alt="Icono de Facebook">
-			</a>
-
-			<a href="#x" aria-label="Cuenta X TechShop">
-				<img src="/" alt="Icono de X">
-			</a>
-			<a href="#instragram" aria-label="Instagram">
-				<img src="/" alt="Icono de Instagram">
-			</a>
-			<a href="#youtube" aria-label="Youtube">
-				<img src="/" alt="Icono de Youtube">
-			</a>
+				<h3>TechShop</h3>
+				<p>Tu tienda de confianza para productos de tecnología e informática desde 2010</p>
+			</section>
 
 
-		</section>
-		<nav class="footer-links" aria label="Enlaces rápidos">
-			<h3>Enlaces rápidos</h3>
-			<ul>
-				<li>
-					<a href="#">Productos</a>
-				</li>
-				<li>
-					<a href="#">Ofertas</a>
-				</li>
-				<li>
-					<a href="#">Componentes</a>
-				</li>
-				<li>
-					<a href="#">Subscríbete</a>
-				</li>
-				<li>
-					<a href="#">Contacto</a>
-				</li>
 
 
-			</ul>
+			<section class="social-links">
 
-		</nav>
+				<a href="#facebook" aria-label="Facebook">
+					<img src="/" alt="Icono de Facebook">
+				</a>
 
-
-		<nav class="customer-service" aria laber="Atención al cliente">
-			<h3>Atención al cliente</h3>
-
-			<ul>
-				<li>
-					<a href="#">Mi cuenta</a>
-				</li>
-				<li>
-					<a href="#">Seguimiento de Pedidos</a>
-				</li>
-				<li>
-					<a href="#">Devoluciones</a>
-				</li>
-				<li>
-					<a href="#">Garantía</a>
-				</li>
-				<li>
-					<a href="#">Preguntas frecuentes</a>
-				</li>
-			</ul>
+				<a href="#x" aria-label="Cuenta X TechShop">
+					<img src="/" alt="Icono de X">
+				</a>
+				<a href="#instragram" aria-label="Instagram">
+					<img src="/" alt="Icono de Instagram">
+				</a>
+				<a href="#youtube" aria-label="Youtube">
+					<img src="/" alt="Icono de Youtube">
+				</a>
 
 
-		</nav>
+			</section>
 
 
-		<section class="contacto-info">
-			<h3>Contacto</h3>
-			<adress>
+			<nav class="footer-nav" aria label="Enlaces rápidos">
+				<h3>Enlaces rápidos</h3>
+				<ul>
+					<li>
+						<a href="#productos">Productos</a>
+					</li>
+					<li>
+						<a href="#ofertas">Ofertas</a>
+					</li>
+					<li>
+						<a href="#suscribete">Subscríbete</a>
+					</li>
+					<li>
+						<a href="#contacto">Contacto</a>
+					</li>
 
-				<img src="/" alt="Icono de localización">
-				<p>Calle Tecnología 123,28001 Madrid, España</p>
+
+				</ul>
+
+			</nav>
 
 
-				<img src="/" alt="Icono de teléfono">
-				<p>+34 900 123 456 </p>
+			<nav class="customer-service" aria label="Atención al cliente">
+				<h3>Atención al cliente</h3>
+
+				<ul>
+					<li>
+						<a href="micuenta.html">Mi cuenta</a>
+					</li>
+					<li>
+						<a href="pedidos.html">Seguimiento de Pedidos</a>
+					</li>
+					<li>
+						<a href="devoluciones.html">Devoluciones</a>
+					</li>
+					<li>
+						<a href="garantia.html">Garantía</a>
+					</li>
+					<li>
+						<a href="preguntas.html">Preguntas frecuentes</a>
+					</li>
+				</ul>
 
 
-				<img src="/" alt="Icono de correo">
-				<p>info@techShopinformatica.es</p>
+			</nav>
 
 
-			</adress>
-		</section>
+			<section class="footer-contact">
+				<h3>Contacto</h3>
+				<address>
 
+					<img src="/" alt="Icono de localización">
+					<p>Calle Tecnología 123,28001 Madrid, España</p>
+
+
+					<img src="/" alt="Icono de teléfono">
+					<p>+34 900 123 456 </p>
+
+
+					<img src="/" alt="Icono de correo">
+					<p>info@techShopinformatica.es</p>
+
+
+				</address>
+			</section>
+
+		</div>
 
 		<br>
+
+
 		<p class="copyright">
 			© 2026 TechShop. Todos los derechos reservados.
 		</p>
+
+
 
 
 	</footer>
