@@ -84,7 +84,7 @@
 body {
     font-family: "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
-    color: var(--color-white);
+    color:black;
 }
 
 img {
@@ -207,6 +207,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    color: var(--color-white);
 }
 
 .ofert-badge {
@@ -278,7 +279,7 @@ img {
 .section-title {
     text-align: center;
     margin-bottom: var(--space-lg);
-    color: black;
+    
 }
 
 .section-title h2 {
@@ -343,6 +344,7 @@ img {
 }
 
 .product-title {
+   
 
     font-size: 1.05rem;
 
@@ -397,6 +399,6 @@ img {
 .btn-add-cart:hover {
 
     transform: translateY(-2px); /*Se desliza un poco al pasar el ratón*/
-
-
 }
+
+/*////---NEWSLETTER---/////*/
