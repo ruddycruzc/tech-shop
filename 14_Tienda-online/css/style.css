@@ -59,7 +59,7 @@ img {
     display: block;
 
 }
-
+/*/////---HEADER---/////*/
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -72,30 +72,32 @@ img {
     top: 0;
     z-index: 1000;
     padding-bottom: 1rem;
+    gap: 1rem;
 }
-
+/*/////---NAVBAR---/////*/
 .navbar {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
+    flex: 1;
+    /*Ocupa todo el espacio libre del contenedor*/
+    gap:1rem;
 }
-
+/*/////--LOGO---/////*/
 .logo {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
 }
 
 .logo img {
     width: 100%;
-    display: block;
-    height: 90px;
+    height: 150px;
 }
 
-
+/*/////---ICONOS DE USUARIO---/////*/
 .user-actions {
     display: flex;
     gap: 1rem;
-    order: 2;
     margin-left: auto;
-    margin-right: 1rem;
 }
 
 .user-actions a {
@@ -107,40 +109,45 @@ img {
     width: 24px;
     height: 24px;
 }
-
+/*/////---BOTON DE HAMBURGUESA---/////*/
 .nav-toggle {
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 2.2rem;
     cursor: pointer;
     color: var(--dark);
-    order: 3;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
+    padding: 0.5rem 0.8rem;
 }
-
+/*/////---MENU---/////*/
 .nav-list {
     display: none;
     /*Oculto en movil*/
-    order: 4;
     width: 100%;
-    flex-basis: 100%;
-     transition: all 0.3s ease;
+    list-style: none;
+    flex-basis: 100%; /* Hace que el menú baje a la siguiente línea */
 }
 
 .nav-list a {
     text-decoration: none;
     color: var(--dark);
     font-weight: 500;
-    transition: var(--transition);
+     transition: color 0.3s ease;
+}
+/*/////---HOVER LINKS---/////*/
+.nav-list a:hover {
+    color: var(--primary);
 }
 
+/*/////---MENU ABIERTO---/////*/
 .nav-list.active {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding: 2rem 0;
-    /* Espacio arriba y abajo del menú abierto */
     text-align: center;
 }
+.user-actions a[href="#search"],
+.user-actions a[href="login.html"] {  /*Están ocultos en móvil */
+    display: none;
+}
+
