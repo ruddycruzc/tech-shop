@@ -84,7 +84,7 @@
 body {
     font-family: "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
-    color:black;
+    color: black;
 }
 
 img {
@@ -269,6 +269,7 @@ img {
 .hero-img img {
     border-radius: 20px;
 }
+
 /*////---PRODUCTOS DESTACADOS---/////*/
 .products {
     padding: var(--space-xl) var(--container-padding);
@@ -279,7 +280,7 @@ img {
 .section-title {
     text-align: center;
     margin-bottom: var(--space-lg);
-    
+
 }
 
 .section-title h2 {
@@ -344,7 +345,7 @@ img {
 }
 
 .product-title {
-   
+
 
     font-size: 1.05rem;
 
@@ -398,7 +399,68 @@ img {
 
 .btn-add-cart:hover {
 
-    transform: translateY(-2px); /*Se desliza un poco al pasar el ratón*/
+    transform: translateY(-2px);
+    /*Se desliza un poco al pasar el ratón*/
 }
 
 /*////---NEWSLETTER---/////*/
+.newsletter {
+    padding: var(--space-xl) var(--container-padding);
+    text-align: center;
+    background: var(--hero-gradient);
+    color: white;
+}
+
+.newsletter header {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: var(--space-md);
+}
+
+.newsletter h2 {
+    font-size: var(--font-size-h2);
+    margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+    color: #e5e7eb;
+    font-size: 0.95rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+    margin-top: var(--space-md);
+}
+
+.newsletter input {
+
+    padding: 0.9rem;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-base);
+    background: #e5e7eb;
+
+}
+.newsletter .button-primary{
+
+background:linear-gradient(
+90deg,
+#3b82f6,
+#9333ea
+);
+
+border:none;
+
+border-radius:var(--radius-md);
+
+padding:0.9rem;
+
+font-weight:600;
+
+cursor:pointer;
+
+}
