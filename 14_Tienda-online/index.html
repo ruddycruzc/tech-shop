@@ -21,7 +21,6 @@
 			<button class="nav-toggle" type="button" id="nav-toggle" aria-label="Abrir menu" aria-controls="nav-list"
 				aria-expanded="false">
 				☰
-				<!--Los atributos aria hacen el menu accesible-->
 			</button>
 
 
@@ -96,7 +95,7 @@
 
 
 		<section id="productos" class="productos">
-			<header class="section-tittle">
+			<header class="section-title">
 				<h2>Productos Destacados</h2>
 
 				<p>Equípate con lo mejor de TechShop</p>
@@ -113,7 +112,7 @@
 
 							<img src="images/antivirus.jpg" alt="Software antivirus">
 
-							<h3>Antivirus</h3>
+							<h3 class="product-title">Antivirus</h3>
 
 							<p class="price">33€</p>
 
@@ -134,7 +133,7 @@
 
 							<img src="images/grafica.jpg" alt="Tarjeta gráfica gaming">
 
-							<h3>Tarjeta gráfica</h3>
+							<h3 class="product-title">Tarjeta gráfica</h3>
 
 							<p class="price">169€</p>
 
@@ -154,14 +153,14 @@
 
 							<img src="images/disco.jpg" alt="Disco duro SSD">
 
-							<h3>Disco duro</h3>
+							<h3 class="product-title">Disco duro</h3>
 
 							<p class="price">36€</p>
 
 							<p class="stock">Stock: 8 unidades</p>
 
 						</a>
-						<button class="btn-add-cart">
+						<button class="btn-add-cart" aria-label="Añadir disco duro al carrito">
 							Añadir al carrito
 
 						</button>
@@ -175,14 +174,16 @@
 
 							<img src="images/ordenador.jpg" alt="Ordenador gaming">
 
-							<h3>Ordenador gaming</h3>
+							<h3 class="product-title">Ordenador gaming</h3>
 
 							<p class="price">360€</p>
 
 							<p class="stock">Stock: 3 unidades</p>
 
 						</a>
-						<button class="btn-add-cart">Añadir al carrito</button>
+						<button class="btn-add-cart" aria-label="Añadir ordenador gaming al carrito">
+							Añadir al carrito
+						</button>
 					</article>
 				</li>
 
@@ -195,14 +196,16 @@
 
 							<img src="images/bolso.jpg" alt="Bolso para portátil">
 
-							<h3>Bolso portátil</h3>
+							<h3 class="product-title">Bolso portátil</h3>
 
 							<p class="price">11€</p>
 
 							<p class="stock">Stock: 10 unidades</p>
 
 						</a>
-						<button class="btn-add-cart">Añadir al carrito</button>
+						<button class="btn-add-cart" aria-label="Añadir bolso portátil al carrito">
+							Añadir al carrito
+						</button>
 					</article>
 				</li>
 
@@ -213,14 +216,17 @@
 
 							<img src="images/portatil.jpg" alt="Ordenador portátil">
 
-							<h3>Portátil</h3>
+							<h3 class="product-title">Portátil</h3>
 
 							<p class="price">540€</p>
 
 							<p class="stock">Stock: 4 unidades</p>
 
 						</a>
-						<button class="btn-add-cart">Añadir al carrito</button>
+						<button class="btn-add-cart" aria-label="Añadir portátil al carrito">
+							Añadir al carrito
+
+						</button>
 					</article>
 				</li>
 
@@ -231,14 +237,16 @@
 
 							<img src="images/ram.jpg" alt="Memoria RAM">
 
-							<h3>Memoria RAM</h3>
+							<h3 class="product-title">Memoria RAM</h3>
 
 							<p class="price">21€</p>
 
 							<p class="stock">Stock: 3 unidades</p>
 
 						</a>
-						<button class="btn-add-cart">Añadir al carrito</button>
+						<button class="btn-add-cart" aria-label="Añadir memoria RAM al carrito">
+							Añadir al carrito
+						</button>
 					</article>
 				</li>
 
@@ -249,14 +257,16 @@
 
 							<img src="images/router.jpg" alt="Router WiFi">
 
-							<h3>Router</h3>
+							<h3 class="product-title">Router</h3>
 
 							<p class="price">66€</p>
 
 							<p class="stock">Stock: 1 unidad</p>
 
 						</a>
-						<button class="btn-add-cart">Añadir al carrito</button>
+						<button class="btn-add-cart" aria-label="Añadir router al carrito">
+							Añadir al carrito
+						</button>
 					</article>
 				</li>
 
@@ -267,14 +277,16 @@
 
 							<img src="images/sintonizador.jpg" alt="Sintonizadora de TV">
 
-							<h3>Sintonizadora TV</h3>
+							<h3 class="product-title">Sintonizadora TV</h3>
 
 							<p class="price">25€</p>
 
 							<p class="stock">Stock: 2 unidades</p>
 
 						</a>
-						<button class="btn-add-cart">Añadir al carrito</button>
+						<button class="btn-add-cart" aria-label="Añadir Sintonizadora TV al carrito">
+							Añadir al carrito
+						</button>
 					</article>
 				</li>
 			</ul>
@@ -328,17 +340,17 @@
 			<section class="social-links">
 				<h3>Síguenos</h3>
 				<a href="#facebook" aria-label="Facebook">
-					<img src="/" alt="Icono de Facebook">
+					<img src="" alt="Icono de Facebook">
 				</a>
 
 				<a href="#x" aria-label="Cuenta X TechShop">
-					<img src="/" alt="Icono de X">
+					<img src="" alt="Icono de X">
 				</a>
-				<a href="#instragram" aria-label="Instagram">
-					<img src="/" alt="Icono de Instagram">
+				<a href="#instagram" aria-label="Instagram">
+					<img src="" alt="Icono de Instagram">
 				</a>
 				<a href="#youtube" aria-label="Youtube">
-					<img src="/" alt="Icono de Youtube">
+					<img src="" alt="Icono de Youtube">
 				</a>
 
 
@@ -398,16 +410,16 @@
 					<ul>
 
 						<li>
-							<img src="/nueva-web/images/location.png" alt="Icono de localización">
-							<p>Calle Tecnología 123,28001 Madrid, España</p>
+							<img src="./nueva-web/images/location.png" alt="Icono de localización">
+							Calle Tecnología 123,28001 Madrid, España
 						</li>
 						<li>
-							<img src="/nueva-web/images/phone.png" alt="Icono de teléfono">
-							<p>+34 900 123 456 </p>
+							<img src="./nueva-web/images/phone.png" alt="Icono de teléfono">
+							+34 900 123 456 
 						</li>
 						<li>
-							<img src="/nueva-web/images/mail.png" alt="Icono de correo">
-							<p>info@techShopinformatica.es</p>
+							<img src="./nueva-web/images/mail.png" alt="Icono de correo">
+							info@techShopinformatica.es
 						</li>
 
 
@@ -435,7 +447,7 @@
 
 	</footer>
 
-	<script src="script.js"></script>
+	<script src="./14_Tienda-online/js/javascript.js"></script>
 
 </body>
 
