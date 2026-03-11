@@ -1,0 +1,32 @@
+:root {
+    /* 1. PALETA DE COLORES (Basada en tu prototipo) */
+    --primary: #007bff;          /* Azul principal para botones y enlaces */
+    --primary-hover: #0056b3;    /* Versión más oscura para hover */
+    --secondary: #6c757d;        /* Gris para elementos secundarios */
+    
+    --dark: #1f2937;             /* Gris casi negro para textos principales y footer */
+    --light-bg: #f8f9fa;         /* Fondo suave para secciones */
+    --white: #ffffff;            /* Blanco puro */
+    
+    --success: #28a745;          /* Verde para stock disponible */
+    --error: #dc3545;            /* Rojo para errores o falta de stock */
+
+    /* 2. TIPOGRAFÍA */
+    --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --font-size-base: 16px;
+    --h1-size: clamp(2rem, 5vw, 3.5rem); /* Tamaño fluido para móviles y desktop */
+    --h2-size: 2rem;
+    --text-muted: #6b7280;
+
+    /* 3. ESPACIADO (Para mantener márgenes constantes) */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --container-padding: 5%;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
