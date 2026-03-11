@@ -1,44 +1,78 @@
 :root {
-    /* 1. PALETA DE COLORES (Basada en tu prototipo) */
-    --primary: #007bff;
-    /* Azul principal para botones y enlaces */
-    --primary-hover: #0056b3;
-    /* Versión más oscura para hover */
-    --secondary: #6c757d;
-    /* Gris para elementos secundarios */
 
-    --dark: #1f2937;
-    /* Gris casi negro para textos principales y footer */
-    --light-bg: #f8f9fa;
-    /* Fondo suave para secciones */
-    --white: #ffffff;
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* Blanco puro */
+    /* ===== COLORES PRINCIPALES ===== */
 
-    --success: #28a745;
-    /* Verde para stock disponible */
-    --error: #dc3545;
-    /* Rojo para errores o falta de stock */
+    --color-primary: #3b82f6;
+    --color-primary-hover: #2563eb;
 
-    /* 2. TIPOGRAFÍA */
-    --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    --font-size-base: 16px;
-    --h1-size: clamp(2rem, 5vw, 3.5rem);
-    /* Tamaño fluido para móviles y desktop */
-    --h2-size: 2rem;
-    --text-muted: #6b7280;
+    --color-secondary: #9333ea;
+    --color-secondary-hover: #7e22ce;
 
-    /* 3. ESPACIADO (Para mantener márgenes constantes) */
+    --color-accent: #e4268c;
+
+    --color-dark: #1f2937;
+    --color-muted: #6b7280;
+
+    --color-white: #ffffff;
+    --color-light: #f8fafc;
+
+    --color-border: #e5e7eb;
+
+
+    /* ===== HERO GRADIENT ===== */
+
+    --hero-gradient: linear-gradient(135deg,
+            #7d73fc,
+            #7404d0,
+            #e4268c);
+    --gradient-primary: linear-gradient(90deg,
+            #3b82f6,
+            #9333ea,
+            #f8fafc);
+
+    /* ===== TIPOGRAFÍA ===== */
+
+    --font-main: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+    --font-size-base: 1rem;
+    --font-size-small: 0.875rem;
+
+    --font-size-h1: clamp(2rem, 6vw, 3rem);
+    --font-size-h2: clamp(1.5rem, 4vw, 2rem);
+    --font-size-h3: 1.25rem;
+
+
+    /* ===== ESPACIADO ===== */
+
     --space-xs: 0.5rem;
     --space-sm: 1rem;
     --space-md: 2rem;
-    --space-lg: 4rem;
+    --space-lg: 3rem;
+    --space-xl: 5rem;
+
     --container-padding: 5%;
 
 
+    /* ===== BORDES ===== */
 
-    --radius: 12px;
-    --transition: all 0.3s ease;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 20px;
+    --radius-full: 999px;
+
+
+    /* ===== SOMBRAS ===== */
+
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+
+    /* ===== TRANSICIONES ===== */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+
 }
 
 * {
@@ -50,8 +84,7 @@
 body {
     font-family: "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
-    color: var(--dark);
-    background-color: var(--white);
+    color: var(--color-white);
 }
 
 img {
@@ -166,7 +199,7 @@ img {
     gap: 2rem;
     padding: 4rem 5%;
     min-height: 60vh;
-    background: linear-gradient(135deg, #7d73fc, #7404d0, #e4268c);
+    background: var(--hero-gradient);
     color: var(--white);
 }
 
@@ -182,7 +215,7 @@ img {
     padding: 0.4rem 1rem;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.15);
-   
+
 }
 
 .hero h1 {
@@ -211,22 +244,31 @@ img {
     display: inline-block;
     padding: 0.9rem 1.6rem;
     border-radius: 10px;
-    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    background: var(--gradient-primary);
     color: white;
     text-decoration: none;
     font-weight: 600;
     text-align: center;
 }
 
-.button-secondary{
-    display:inline-block;
-    padding:0.9rem 1.6rem;
-    border-radius:10px;
-    border:1px solid rgba(255,255,255,0.3);
-    color:white;
-    text-decoration:none;
-    text-align:center;
+.button-primary:hover {
+    background: var(--color-primary-hover);
 }
-.hero-img img{
-    border-radius:20px;
+
+.button-secondary {
+    display: inline-block;
+    padding: 0.9rem 1.6rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hero-img img {
+    border-radius: 20px;
+}
+
+.card {
+    border-radius: var(--radius-lg);
 }
