@@ -1,20 +1,30 @@
 :root {
     /* 1. PALETA DE COLORES (Basada en tu prototipo) */
-    --primary: #007bff;          /* Azul principal para botones y enlaces */
-    --primary-hover: #0056b3;    /* Versión más oscura para hover */
-    --secondary: #6c757d;        /* Gris para elementos secundarios */
-    
-    --dark: #1f2937;             /* Gris casi negro para textos principales y footer */
-    --light-bg: #f8f9fa;         /* Fondo suave para secciones */
-    --white: #ffffff;            /* Blanco puro */
-    
-    --success: #28a745;          /* Verde para stock disponible */
-    --error: #dc3545;            /* Rojo para errores o falta de stock */
+    --primary: #007bff;
+    /* Azul principal para botones y enlaces */
+    --primary-hover: #0056b3;
+    /* Versión más oscura para hover */
+    --secondary: #6c757d;
+    /* Gris para elementos secundarios */
+
+    --dark: #1f2937;
+    /* Gris casi negro para textos principales y footer */
+    --light-bg: #f8f9fa;
+    /* Fondo suave para secciones */
+    --white: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Blanco puro */
+
+    --success: #28a745;
+    /* Verde para stock disponible */
+    --error: #dc3545;
+    /* Rojo para errores o falta de stock */
 
     /* 2. TIPOGRAFÍA */
     --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
     --font-size-base: 16px;
-    --h1-size: clamp(2rem, 5vw, 3.5rem); /* Tamaño fluido para móviles y desktop */
+    --h1-size: clamp(2rem, 5vw, 3.5rem);
+    /* Tamaño fluido para móviles y desktop */
     --h2-size: 2rem;
     --text-muted: #6b7280;
 
@@ -24,9 +34,112 @@
     --space-md: 2rem;
     --space-lg: 4rem;
     --container-padding: 5%;
+
+
+
+    --radius: 12px;
+    --transition: all 0.3s ease;
 }
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--white);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-bottom: 1rem;
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    flex: 0 1 auto;
+}
+
+.logo img {
+    width: 100%;
+    display: block;
+    height: 90px;
+}
+
+
+.user-actions {
+    display: flex;
+    gap: 1rem;
+    order: 2;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.user-actions a {
+    padding: 0.5rem;
+    display: inline-flex;
+}
+
+.user-actions img {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--dark);
+    order: 3;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.nav-list {
+    display: none;
+    /*Oculto en movil*/
+    order: 4;
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-list.is-active {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    /* Espacio arriba y abajo del menú abierto */
+    text-align: center;
 }

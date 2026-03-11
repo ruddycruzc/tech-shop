@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TechShop</title>
-	<meta name="description" content="Tienda online de informática" />
-	<link rel="stylesheet" href="style.css" />
+	<meta name="description" content="Tienda online de informática">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="images/favicon.png">
 </head>
 
@@ -14,7 +14,7 @@
 	<header class="header">
 		<nav class="navbar" aria-label="Navegación principal">
 			<a href="index.html" class="logo">
-				<img src="/" alt="Logo TechShop"> <!--Pendiente de poner-->
+				<img src="/nueva-web/images/logo-inicio.jpg" alt="Logo TechShop"> <!--Pendiente de poner-->
 			</a>
 
 			<!--*BOTON HAMBURGUESA*-->
@@ -46,15 +46,15 @@
 
 		<nav class="user-actions" aria-label="Acciones de usuario"> <!--ACUERDATE DE PONER ICONOS Y FOTOS-->
 			<a href="#search" aria-label="Buscar productos">
-				<img src="/" alt="Buscar">
+				<img src="/nueva-web/images/lupa-img.png" alt="Buscar">
 			</a>
 
 			<a href="login.html" aria-label="Mi cuenta">
-				<img src="/" alt="Cuenta">
+				<img src="/nueva-web/images/cuenta-img.png" alt="Cuenta">
 			</a>
 
 			<a href="carrito.html" aria-label="Carrito de la compra">
-				<img src="/" alt="Carrito de compra">
+				<img src="/nueva-web/images/carrito-compra.png" alt="Carrito de compra">
 			</a>
 		</nav>
 	</header>
@@ -66,7 +66,7 @@
 
 		<section class="hero">
 
-			<header class="hero-content">
+			<div class="hero-content">
 
 				<span class="ofert-badge">✨ Nuevas ofertas cada semana</span>
 
@@ -83,7 +83,7 @@
 					<a href="#ofertas" class="button-secondary">Ofertas Especiales</a>
 
 				</div>
-			</header>
+			</div>
 
 			<figure class="hero-img">
 				<img src="/" alt="Ordenador gaming de alto rendimiento">
@@ -120,7 +120,9 @@
 							<p class="stock">Stock: 5 unidades</p>
 
 						</a>
-						<button class="btn-add-cart">Añadir al carrito</button>
+						<button class="btn-add-cart" aria-label="Añadir antivirus al carrito">
+							Añadir al carrito
+						</button>
 
 					</article>
 				</li>
@@ -139,7 +141,9 @@
 							<p class="stock">Stock: 2 unidades</p>
 
 						</a>
-						<button class="btn-add-cart">Añadir al carrito</button>
+						<button class="btn-add-cart" aria-label="Añadir tarjeta gráfica al carrito">
+							Añadir al carrito
+						</button>
 					</article>
 				</li>
 
@@ -157,7 +161,10 @@
 							<p class="stock">Stock: 8 unidades</p>
 
 						</a>
-						<button class="btn-add-cart">Añadir al carrito</button>
+						<button class="btn-add-cart">
+							Añadir al carrito
+
+						</button>
 					</article>
 				</li>
 
@@ -270,6 +277,7 @@
 						<button class="btn-add-cart">Añadir al carrito</button>
 					</article>
 				</li>
+			</ul>
 		</section>
 
 
@@ -337,7 +345,7 @@
 			</section>
 
 
-			<nav class="footer-nav" aria label="Enlaces rápidos">
+			<nav class="footer-nav" aria-label="Enlaces rápidos">
 				<h3>Enlaces rápidos</h3>
 				<ul>
 					<li>
@@ -359,7 +367,7 @@
 			</nav>
 
 
-			<nav class="customer-service" aria label="Atención al cliente">
+			<nav class="customer-service" aria-label="Atención al cliente">
 				<h3>Atención al cliente</h3>
 
 				<ul>
@@ -387,19 +395,29 @@
 			<section class="footer-contact">
 				<h3>Contacto</h3>
 				<address>
+					<ul>
 
-					<img src="/" alt="Icono de localización">
-					<p>Calle Tecnología 123,28001 Madrid, España</p>
+						<li>
+							<img src="/nueva-web/images/location.png" alt="Icono de localización">
+							<p>Calle Tecnología 123,28001 Madrid, España</p>
+						</li>
+						<li>
+							<img src="/nueva-web/images/phone.png" alt="Icono de teléfono">
+							<p>+34 900 123 456 </p>
+						</li>
+						<li>
+							<img src="/nueva-web/images/mail.png" alt="Icono de correo">
+							<p>info@techShopinformatica.es</p>
+						</li>
 
 
-					<img src="/" alt="Icono de teléfono">
-					<p>+34 900 123 456 </p>
 
 
-					<img src="/" alt="Icono de correo">
-					<p>info@techShopinformatica.es</p>
 
 
+
+
+					</ul>
 				</address>
 			</section>
 
@@ -417,7 +435,7 @@
 
 	</footer>
 
-
+	<script src="script.js"></script>
 
 </body>
 
