@@ -74,7 +74,7 @@ img {
     padding-bottom: 1rem;
 }
 
-.nav-bar {
+.navbar {
     display: flex;
     flex-wrap: wrap;
 }
@@ -126,6 +126,7 @@ img {
     order: 4;
     width: 100%;
     flex-basis: 100%;
+     transition: all 0.3s ease;
 }
 
 .nav-list a {
@@ -135,7 +136,7 @@ img {
     transition: var(--transition);
 }
 
-.nav-list.is-active {
+.nav-list.active {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
