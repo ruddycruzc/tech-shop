@@ -294,6 +294,7 @@ img {
     margin-bottom: 1rem;
 }
 
+
 .section-title p {
     color: var(--color-muted);
     font-size: var(--font-main);
@@ -478,12 +479,14 @@ img {
     background: var(--color-light);
     padding: var(--space-md);
 }
-.main-footer img{
+
+.main-footer img {
     height: auto;
     width: 40%;
 
 }
-.main-footer p{
+
+.main-footer p {
     padding: var(--space-sm);
 }
 
@@ -557,4 +560,66 @@ img {
     width: 20px;
     height: 20px;
     fill: var(--color-secondary);
+}
+
+/* ===== TABLET ===== */
+
+@media (min-width: 768px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 2rem;
+    }
+    .user-actions a[href="#search"],
+    .user-actions a[href="login.html"] {
+        display: inline-flex;
+    }
+
+    /* HERO */
+    .hero {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-content {
+        flex: 1;
+    }
+
+    .hero-img {
+        flex: 1;
+    }
+
+    /* BOTONES HERO */
+    .hero-buttons {
+        flex-direction: row;
+    }
+
+    /* GRID PRODUCTOS */
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* NEWSLETTER */
+    .newsletter form {
+        flex-direction: row;
+    }
+.footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ===== DESKTOP ===== */
+
+@media (min-width: 1024px) {
+
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
 }
