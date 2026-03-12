@@ -178,6 +178,7 @@ img {
     color: var(--dark);
     font-weight: 500;
     transition: color 0.3s ease;
+    color: var(--color-dark);
 }
 
 /*/////---HOVER LINKS---/////*/
@@ -281,17 +282,21 @@ img {
 
 .section-title {
     text-align: center;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xl);
+    color: #7404d0;
+
 
 }
 
 .section-title h2 {
     font-size: var(--font-size-h2);
-    margin-bottom: 0.5rem;
+    padding: var(--space-md);
+    margin-bottom: 1rem;
 }
 
 .section-title p {
     color: var(--color-muted);
+    font-size: var(--font-main);
 }
 
 .products-grid {
