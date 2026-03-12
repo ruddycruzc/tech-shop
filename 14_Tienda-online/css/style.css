@@ -471,7 +471,15 @@ img {
 
 .main-footer {
     background: var(--color-light);
-    padding: var(--space-xl) var(--container-padding);
+    padding: var(--space-md);
+}
+.main-footer img{
+    height: auto;
+    width: 40%;
+
+}
+.main-footer p{
+    padding: var(--space-sm);
 }
 
 .footer-container {
