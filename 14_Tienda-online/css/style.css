@@ -304,6 +304,8 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    list-style: none;
+    padding: 0;
 }
 
 .product-card {

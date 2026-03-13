@@ -16,6 +16,9 @@ document.querySelectorAll(".nav-list a").forEach(link => {
     toggleButton.setAttribute("aria-expanded", "false");
   });
 });
+
+
+
 document.querySelectorAll('.btn-add-cart').forEach(button => {
     button.addEventListener('click', function(e){
         e.stopPropagation();
