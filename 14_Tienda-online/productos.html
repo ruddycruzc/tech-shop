@@ -2,128 +2,405 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Productos | TechShop</title>
-<meta name="description" content="Descubre todos los productos disponibles en TechShop">
+    <title>Productos | TechShop</title>
+    <meta name="description" content="Descubre todos los productos disponibles en TechShop">
 
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png">
 </head>
 
 <body>
 
-<header class="header">
+    <header class="header">
 
-<nav class="navbar">
+        <nav class="navbar">
 
-<a href="index.html" class="logo">
-<img src="images/logo-techshop.png" alt="Logo TechShop">
-</a>
+            <a href="index.html" class="logo">
+                <img src="images/descargar.png" alt="Logo TechShop">
+            </a>
 
-<ul class="nav-list">
-<li><a href="index.html">Inicio</a></li>
-<li><a href="productos.html">Productos</a></li>
-<li><a href="index.html#ofertas">Ofertas</a></li>
-<li><a href="index.html#contacto">Contacto</a></li>
-</ul>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="index.html#ofertas">Ofertas</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
 
-</nav>
+        </nav>
+        <nav class="user-actions" aria-label="Acciones de usuario"> <!--ACUERDATE DE PONER ICONOS Y FOTOS-->
+            <a href="#search" aria-label="Buscar productos">
+                <img src="images/lupa-img.png" alt="Buscar">
+            </a>
 
-</header>
+            <a href="login.html" aria-label="Mi cuenta">
+                <img src="images/cuenta-img.png" alt="Cuenta">
+            </a>
 
+            <a href="carrito.html" aria-label="Carrito de la compra">
+                <img src="images/carrito-compra.png" alt="Carrito de compra">
+            </a>
+        </nav>
+        <!--*BOTON HAMBURGUESA*-->
+        <button class="nav-toggle" type="button" id="nav-toggle" aria-label="Abrir menu" aria-controls="nav-list"
+            aria-expanded="false">
+            ☰
+        </button>
 
-<main>
-
-<section class="productos">
-
-<header class="section-title">
-<h1>Todos los productos</h1>
-<p>Encuentra el equipo perfecto para tu setup</p>
-</header>
-
-
-<ul class="products-grid">
-
-<li class="product-item">
-<article class="product-card">
-
-<a href="producto-antivirus.html">
-
-<img src="images/antivirus.webp" alt="Antivirus Pro">
-
-<h3>Antivirus Pro</h3>
-
-<p class="price">29,99€</p>
-
-</a>
-
-</article>
-</li>
+    </header>
 
 
-<li class="product-item">
-<article class="product-card">
-
-<a href="producto-monitor.html">
-
-<img src="images/monitor.webp" alt="Monitor Gaming 27">
-
-<h3>Monitor Gaming 27"</h3>
-
-<p class="price">299€</p>
-
-</a>
-
-</article>
-</li>
+    <main>
 
 
-<li class="product-item">
-<article class="product-card">
+        <section id="productos" class="productos">
+            <header class="section-title" id="section-title">
+                <h2>Productos Destacados</h2>
 
-<a href="producto-laptop.html">
+                <p>Encuentra el equipo perfecto para tu setup</p>
 
-<img src="images/laptop.webp" alt="Laptop Pro">
-
-<h3>Laptop Pro</h3>
-
-<p class="price">1199€</p>
-
-</a>
-
-</article>
-</li>
+            </header>
 
 
-<li class="product-item">
-<article class="product-card">
 
-<a href="producto-teclado.html">
+            <ul class="products-grid">
+                <li class="product-item">
+                    <article class="product-card">
 
-<img src="images/teclado.webp" alt="Teclado mecánico">
+                        <a href="producto-antivirus.html">
 
-<h3>Teclado mecánico RGB</h3>
+                            <img src="img/productos/1.jpg" alt="Software antivirus" loading="lazy">
 
-<p class="price">89€</p>
+                            <h3 class="product-title">Antivirus</h3>
 
-</a>
+                            <p class="price">33€</p>
 
-</article>
-</li>
+                            <p class="stock">Stock: 5 unidades</p>
 
-</ul>
+                        </a>
+                        <button class="btn-add-cart" aria-label="Añadir antivirus al carrito">
+                            Añadir al carrito
+                        </button>
 
-</section>
+                    </article>
+                </li>
 
-</main>
+                <li class="product-item">
+                    <article class="product-card">
 
-<footer>
+                        <a href="producto-grafica.html">
 
-<p>© TechShop</p>
+                            <img src="img/productos/2.jpg" alt="Tarjeta gráfica gaming" loading="lazy">
 
-</footer>
+                            <h3 class="product-title">Tarjeta gráfica</h3>
 
+                            <p class="price">169€</p>
+
+                            <p class="stock">Stock: 2 unidades</p>
+
+                        </a>
+                        <button class="btn-add-cart" aria-label="Añadir tarjeta gráfica al carrito">
+                            Añadir al carrito
+                        </button>
+                    </article>
+                </li>
+
+                <li class="product-item">
+                    <article class="product-card">
+
+                        <a href="producto-disco.html">
+
+                            <img src="img/productos/3.jpg" alt="Disco duro SSD" loading="lazy">
+
+                            <h3 class="product-title">Disco duro</h3>
+
+                            <p class="price">36€</p>
+
+                            <p class="stock">Stock: 8 unidades</p>
+
+                        </a>
+                        <button class="btn-add-cart" aria-label="Añadir disco duro al carrito">
+                            Añadir al carrito
+
+                        </button>
+                    </article>
+                </li>
+
+                <li class="product-item">
+                    <article class="product-card">
+
+                        <a href="producto-ordenador.html">
+
+                            <img src="img/productos/4.jpg" alt="Ordenador gaming" loading="lazy">
+
+                            <h3 class="product-title">Ordenador gaming</h3>
+
+                            <p class="price">360€</p>
+
+                            <p class="stock">Stock: 3 unidades</p>
+
+                        </a>
+                        <button class="btn-add-cart" aria-label="Añadir ordenador gaming al carrito">
+                            Añadir al carrito
+                        </button>
+                    </article>
+                </li>
+
+
+                <li class="product-item">
+
+                    <article class="product-card">
+
+                        <a href="producto-bolso.html">
+
+                            <img src="img/productos/5.jpg" alt="Bolso para portátil" loading="lazy">
+
+                            <h3 class="product-title">Bolso portátil</h3>
+
+                            <p class="price">11€</p>
+
+                            <p class="stock">Stock: 10 unidades</p>
+
+                        </a>
+                        <button class="btn-add-cart" aria-label="Añadir bolso portátil al carrito">
+                            Añadir al carrito
+                        </button>
+                    </article>
+                </li>
+
+                <li class="product-item">
+                    <article class="product-card">
+
+                        <a href="producto-portatil.html">
+
+                            <img src="img/productos/6.jpg" alt="Ordenador portátil" loading="lazy">
+
+                            <h3 class="product-title">Portátil</h3>
+
+                            <p class="price">540€</p>
+
+                            <p class="stock">Stock: 4 unidades</p>
+
+                        </a>
+                        <button class="btn-add-cart" aria-label="Añadir portátil al carrito">
+                            Añadir al carrito
+
+                        </button>
+                    </article>
+                </li>
+
+                <li class="product-item">
+                    <article class="product-card">
+
+                        <a href="producto-ram.html">
+
+                            <img src="img/productos/7.jpg" alt="Memoria RAM" loading="lazy">
+
+                            <h3 class="product-title">Memoria RAM</h3>
+
+                            <p class="price">21€</p>
+
+                            <p class="stock">Stock: 3 unidades</p>
+
+                        </a>
+                        <button class="btn-add-cart" aria-label="Añadir memoria RAM al carrito">
+                            Añadir al carrito
+                        </button>
+                    </article>
+                </li>
+
+                <li class="product-item">
+                    <article class="product-card">
+
+                        <a href="producto-router.html">
+
+                            <img src="img/productos/8.jpg" alt="Router WiFi" loading="lazy">
+
+                            <h3 class="product-title">Router</h3>
+
+                            <p class="price">66€</p>
+
+                            <p class="stock">Stock: 1 unidad</p>
+
+                        </a>
+                        <button class="btn-add-cart" aria-label="Añadir router al carrito">
+                            Añadir al carrito
+                        </button>
+                    </article>
+                </li>
+
+                <li class="product-item">
+                    <article class="product-card">
+
+                        <a href="producto-tv.html">
+
+                            <img src="img/productos/9.jpg" alt="Sintonizadora de TV" loading="lazy">
+
+                            <h3 class="product-title">Sintonizadora TV</h3>
+
+                            <p class="price">25€</p>
+
+                            <p class="stock">Stock: 2 unidades</p>
+
+                        </a>
+                        <button class="btn-add-cart" aria-label="Añadir Sintonizadora TV al carrito">
+                            Añadir al carrito
+                        </button>
+                    </article>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+    <footer class="main-footer" id="contacto">
+        <div class="footer-container">
+            <section class="footer-info">
+                <a href="index.html">
+                    <img src="images/descargar.png" alt="Logo TechShop" loading="lazy"> <!--Pendiente de poner-->
+                </a>
+                <p>Tu tienda de confianza para productos de tecnología e informática desde 2010</p>
+            </section>
+
+
+
+
+            <section class="social-links">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.7v-2.9h2.7V9.4c0-2.7 1.6-4.2 4-4.2 1.2 0 2.4.2 2.4.2v2.6h-1.3c-1.3 0-1.7.8-1.7 1.6v1.9h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12" />
+                        </svg>
+                    </a>
+                    <a href="#x" aria-label="X">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18.9 2H22l-7.5 8.5L23 22h-6.8l-5.3-7-6.2 7H2l8-9L1 2h6.9l4.8 6.3L18.9 2z" />
+                        </svg>
+                    </a>
+
+                    <a href="#instagram" aria-label="Instagram">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.9a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z" />
+                        </svg>
+                    </a>
+
+                    <a href="#youtube" aria-label="YouTube">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M23.5 6.2s-.2-1.7-.9-2.5c-.9-1-1.9-1-2.4-1.1C16.7 2.3 12 2.3 12 2.3h0s-4.7 0-8.2.3c-.5.1-1.5.1-2.4 1.1-.7.8-.9 2.5-.9 2.5S0 8.2 0 10.2v1.6c0 2 .5 4 .5 4s.2 1.7.9 2.5c.9 1 2.1 1 2.6 1.1 1.9.2 8 .3 8 .3s4.7 0 8.2-.3c.5-.1 1.5-.1 2.4-1.1.7-.8.9-2.5.9-2.5s.5-2 .5-4v-1.6c0-2-.5-4-.5-4zM9.5 14.5v-5l5 2.5-5 2.5z" />
+                        </svg>
+
+                </div>
+            </section>
+
+            <div class="enlaces-footer">
+                <nav class="footer-nav" aria-label="Enlaces rápidos">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li>
+                            <a href="#productos">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#ofertas">Ofertas</a>
+                        </li>
+                        <li>
+                            <a href="#newsletter">Subscríbete</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+
+
+                    </ul>
+
+                </nav>
+
+
+                <nav class="customer-service" aria-label="Atención al cliente">
+                    <h3>Atención al cliente</h3>
+
+                    <ul>
+                        <li>
+                            <a href="micuenta.html">Mi cuenta</a>
+                        </li>
+                        <li>
+                            <a href="pedidos.html">Seguimiento de Pedidos</a>
+                        </li>
+                        <li>
+                            <a href="devoluciones.html">Devoluciones</a>
+                        </li>
+                        <li>
+                            <a href="garantia.html">Garantía</a>
+                        </li>
+                        <li>
+                            <a href="preguntas.html">Preguntas frecuentes</a>
+                        </li>
+                    </ul>
+
+
+                </nav>
+
+            </div>
+            <section class="footer-contact">
+                <h3>Contacto</h3>
+                <address>
+
+
+                    <div class="contact-item">
+                        <!-- Localización -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
+                        </svg>
+
+                        <p>Calle Tecnología 123, 28001 Madrid, España</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <!-- Teléfono -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.3 22 2 13.7 2 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.2 2.9z" />
+                        </svg>
+
+                        <p>+34 600 000 000</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <!-- Email -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 
+            0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 
+            4-8 5L4 8V6l8 5 8-5v2z" />
+                        </svg>
+
+                        <p>info@techshop.com</p>
+                    </div>
+                </address>
+            </section>
+
+        </div>
+
+        <br>
+
+
+        <p class="copyright">
+            © 2026 TechShop. Todos los derechos reservados.
+        </p>
+
+
+
+
+    </footer>
+    <script src="js/javascript.js"></script>
 </body>
+
 </html>

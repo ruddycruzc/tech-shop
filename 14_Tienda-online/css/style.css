@@ -403,7 +403,10 @@ img {
     /*Se desliza un poco al pasar el ratón*/
 }
 
-
+.products-link{
+    text-align:center;
+    margin:2rem;
+}
 
 /*////---NEWSLETTER---/////*/
 
