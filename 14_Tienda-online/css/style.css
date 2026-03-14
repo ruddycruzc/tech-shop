@@ -1,6 +1,6 @@
 :root {
 
-   /* ===== COLORES PRINCIPALES ===== */
+    /* ===== COLORES PRINCIPALES ===== */
 
     --color-primary: #4f6df5;
     --color-primary-hover: #3f5ce0;
@@ -21,18 +21,14 @@
 
     /* ===== HERO GRADIENT ===== */
 
-    --hero-gradient: linear-gradient(
-        135deg,
-        #6c7af7,
-        #7c63e6,
-        #d35c9c
-    );
+    --hero-gradient: linear-gradient(135deg,
+            #6c7af7,
+            #7c63e6,
+            #d35c9c);
 
-    --gradient-primary: linear-gradient(
-        90deg,
-        #4f6df5,
-        #7c63e6
-    );
+    --gradient-primary: linear-gradient(90deg,
+            #4f6df5,
+            #7c63e6);
 
 
     /* ===== TIPOGRAFÍA ===== */
@@ -87,9 +83,9 @@
 }
 
 body {
-    font-family: "Segoe UI", Roboto, sans-serif;
+    font-family: var(--font-main);
     line-height: 1.6;
-    color: black;
+    color: var(--color-dark);
 }
 
 img {
@@ -180,7 +176,6 @@ img {
 
 .nav-list a {
     text-decoration: none;
-    color: var(--dark);
     font-weight: 500;
     transition: color 0.3s ease;
     color: var(--color-dark);
@@ -216,6 +211,7 @@ img {
     flex-direction: column;
     gap: 1.5rem;
     color: var(--color-white);
+    max-width: 500px;
 }
 
 .ofert-badge {
@@ -250,7 +246,7 @@ img {
 }
 
 .button-primary {
-     display: inline-block;
+    display: inline-block;
     padding: 0.9rem 1.6rem;
     border-radius: var(--radius-md);
     background: var(--color-primary);
@@ -262,9 +258,9 @@ img {
 }
 
 .button-primary:hover {
-      background: var(--color-primary-hover);
+    background: var(--color-primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 .button-secondary {
@@ -503,10 +499,8 @@ img {
 
 .social-links {
     display: flex;
-    gap: 1rem;
-    display: flex;
     flex-direction: column;
-
+    gap: 1rem;
 }
 
 .social-icons {
@@ -631,21 +625,16 @@ img {
 /* ===== DESKTOP ===== */
 
 @media (min-width: 1024px) {
-    .header{
+    .header {
         flex-wrap: nowrap;
-    }
-    .navbar {
-        display: flex;
-        align-items: center;
-        flex: 1;
     }
 
     .nav-list {
         display: flex;
         justify-content: space-evenly;
-        
+
         gap: 2rem;
-    
+
     }
 
     .products-grid {
