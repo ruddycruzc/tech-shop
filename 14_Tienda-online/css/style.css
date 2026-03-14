@@ -1,34 +1,39 @@
 :root {
 
-    /* ===== COLORES PRINCIPALES ===== */
+   /* ===== COLORES PRINCIPALES ===== */
 
-    --color-primary: #3b82f6;
-    --color-primary-hover: #2563eb;
+    --color-primary: #4f6df5;
+    --color-primary-hover: #3f5ce0;
 
-    --color-secondary: #9333ea;
-    --color-secondary-hover: #7e22ce;
+    --color-secondary: #7c63e6;
+    --color-secondary-hover: #6b53d1;
 
-    --color-accent: #e4268c;
+    --color-accent: #d35c9c;
 
-    --color-dark: #1f2937;
-    --color-muted: #6b7280;
+    --color-dark: #2a2f3a;
+    --color-muted: #6f7685;
 
     --color-white: #ffffff;
-    --color-light: #f8fafc;
+    --color-light: #f6f7fb;
 
-    --color-border: #e5e7eb;
+    --color-border: #e7e9f1;
 
 
     /* ===== HERO GRADIENT ===== */
 
-    --hero-gradient: linear-gradient(135deg,
-            #7d73fc,
-            #7404d0,
-            #e4268c);
-    --gradient-primary: linear-gradient(90deg,
-            #3b82f6,
-            #9333ea,
-            #f8fafc);
+    --hero-gradient: linear-gradient(
+        135deg,
+        #6c7af7,
+        #7c63e6,
+        #d35c9c
+    );
+
+    --gradient-primary: linear-gradient(
+        90deg,
+        #4f6df5,
+        #7c63e6
+    );
+
 
     /* ===== TIPOGRAFÍA ===== */
 
@@ -245,18 +250,21 @@ img {
 }
 
 .button-primary {
-    display: inline-block;
+     display: inline-block;
     padding: 0.9rem 1.6rem;
-    border-radius: 10px;
-    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    background: var(--color-primary);
     color: white;
     text-decoration: none;
     font-weight: 600;
     text-align: center;
+    transition: all 0.25s ease;
 }
 
 .button-primary:hover {
-    background: var(--color-primary-hover);
+      background: var(--color-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
 .button-secondary {
