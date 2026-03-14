@@ -405,9 +405,9 @@ img {
     /*Se desliza un poco al pasar el ratón*/
 }
 
-.products-link{
-    text-align:center;
-    margin:2rem;
+.products-link {
+    text-align: center;
+    margin: 2rem;
 }
 
 /*////---NEWSLETTER---/////*/
@@ -566,11 +566,16 @@ img {
         display: none;
     }
 
+    .navbar {
+        flex-wrap: nowrap;
+    }
+
     .nav-list {
         display: flex;
         flex-direction: row;
         width: auto;
         gap: 2rem;
+        margin-left: 2rem;
     }
 
     .user-actions a[href="#search"],
@@ -599,7 +604,7 @@ img {
 
     /* GRID PRODUCTOS */
     .products-grid {
-      grid-template-columns: repeat(2, 1fr) ;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* NEWSLETTER */
@@ -618,6 +623,22 @@ img {
 /* ===== DESKTOP ===== */
 
 @media (min-width: 1024px) {
+    .header{
+        flex-wrap: nowrap;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-evenly;
+        
+        gap: 2rem;
+    
+    }
 
     .products-grid {
         grid-template-columns: repeat(4, 1fr);
